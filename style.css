@@ -781,14 +781,36 @@ body {
 @media (max-width: 600px) {
   body { padding: 32px 14px 60px; }
   .card { padding: 40px 20px 36px; }
-  .contact-grid { width: 100%; }
+
+  .contact-grid {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
   .contact-card { width: 100%; box-sizing: border-box; }
   .btn-onboard { width: 100%; box-sizing: border-box; }
   .onboard-cta { padding: 0; }
-  .contact-card { flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+
+  .contact-card {
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
   .contact-info { min-width: 0; }
-  .btn-violet, .btn-lime { width: 100%; justify-content: center; }
-  .plus-banner { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+  .contact-card .btn-violet,
+  .contact-card .btn-lime {
+    width: auto;
+    justify-content: center;
+  }
+
+  .plus-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 /* Standard mobile: up to 480px */
