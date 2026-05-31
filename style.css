@@ -791,26 +791,6 @@ body {
   .plus-banner { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
-  .contact-card {
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: flex-start;
-  }
-  .contact-info { min-width: 0; }
-
-  .btn-violet,
-  .btn-lime {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .plus-banner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-}
-
 /* Standard mobile: up to 480px */
 @media (max-width: 480px) {
   .headline { font-size: clamp(44px, 12vw, 56px); }
