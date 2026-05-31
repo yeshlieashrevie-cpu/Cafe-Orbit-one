@@ -782,16 +782,15 @@ body {
   body { padding: 32px 14px 60px; }
   .card { padding: 40px 20px 36px; }
 
-  .contact-grid {
+.contact-grid {
     width: 100%;
-    width: calc(100% - 32px);
+    max-width: 340px;
     margin: 0 auto;
   }
 
-  .cta-pill {
-    max-width: 340px;
-    margin-left: auto;
-    margin-right: auto;
+.cta-pill {
+    width: calc(100% - 32px);
+    margin: 0 auto;
   }
 
   .contact-card { width: 100%; box-sizing: border-box; }
