@@ -1300,8 +1300,8 @@ body {
 /* side image placeholders in banner */
 /* Remove border/background below once real images are in */
 .banner-side-img {
-  width: 80px;
-  height: 80px;
+  width: clamp(36px, 12vw, 80px);
+  height: clamp(36px, 12vw, 80px);
   max-width: 120px;
   max-height: none;
   object-fit: contain;
@@ -1337,7 +1337,7 @@ body {
 .hero-banner .sub-label {
   color: var(--violet);
   font-family: var(--font-display);
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-size: clamp(0.6rem, 2vw, 1.8rem);
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
@@ -1345,7 +1345,7 @@ body {
 .hero-banner .main-label {
   color: var(--black);
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.4rem, 5vw, 4rem);
   letter-spacing: 0.05em;
   line-height: 1;
   white-space: nowrap;
@@ -1555,8 +1555,18 @@ body {
   }
 
   .hero-banner {
-    gap: 6px;
-    padding: 8px;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+    gap: 0;
+  }
+
+  .banner-side-img.left {
+    margin-left: -8px;
+  }
+
+  .banner-side-img.right {
+    margin-right: -8px;
   }
 
   .hero-banner .sub-label {
