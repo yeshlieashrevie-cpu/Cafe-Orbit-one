@@ -158,39 +158,72 @@
     <!-- Projects -->
     <section class="projects-section">
 
-      <div class="project-card" data-index="1">
-        <div class="project-inner">
-          <span class="project-tag">01</span>
-          <h2 class="project-title">30-Day Interactive Website</h2>
-          <p class="project-desc">A complete, fun &amp; interactive 30-day roadmap site — built to engage, delight, and convert.</p>
-          <!-- ★ PASTE your 30-day website link below (replace YOUR_ROADMAP_URL_HERE) -->
-          <a class="btn btn-lime" href="https://cafe-sample-roadmap-site.vercel.app" target="_blank" rel="noopener">
-            View Roadmap Site <span class="arrow">→</span>
-          </a>
-        </div>
-        <div class="project-accent"></div>
-      </div>
 
-      <div class="project-card" data-index="2">
-        <div class="project-inner">
-          <span class="project-tag">02</span>
-          <h2 class="project-title">Café Analysis PDF</h2>
-          <p class="project-desc">A full in-depth café analysis — data, insights, and strategy compiled into a polished document.</p>
-          <!-- ★ PASTE your Google Drive / PDF share link below (replace YOUR_PDF_URL_HERE) -->
-          <a class="btn btn-lime" href="https://drive.google.com/file/d/13jIh4bdPCGVVVSsR8cze-CUHbcV5EfcT/view?usp=drive_link" target="_blank" rel="noopener">
-            View Full PDF <span class="arrow">→</span>
-          </a>
-        </div>
-        <div class="project-accent"></div>
-      </div>
-
-    </section>
-
-    <!-- Plus -->
-    <div class="plus-banner">
-      <div class="plus-pill">PLUS</div>
-      <p class="plus-text">1 week of message consulting &amp; follow-ups — included with every project.</p>
+<!-- Project Cards -->
+<section class="projects-section">
+  
+  <!-- Card 01: 30-Day Interactive Website -->
+  <div class="project-card" data-index="1" onclick="this.classList.toggle('expanded')">
+    <!-- Background image anchored to right side -->
+    <div class="card-bg-image" style="background-image: url('roadmap.png');"></div>
+    <!-- Gradient fade left over image -->
+    <div class="card-img-fade"></div>
+    <!-- Glass overlay -->
+    <div class="card-glass"></div>
+    <!-- Inner rim highlight -->
+    <div class="card-inner-border"></div>
+    <!-- Top sheen -->
+    <div class="card-sheen"></div>
+    <!-- Left accent line -->
+    <div class="project-accent"></div>
+    <!-- Content -->
+    <div class="project-inner">
+      <span class="project-tag">01</span>
+      <h2 class="project-title">30-Day Interactive Website</h2>
+      <p class="project-desc">A complete, fun &amp; interactive 30-day roadmap site — built to engage, delight, and convert.</p>
+      <a class="btn-lime" href="https://cafe-sample-roadmap-site.vercel.app" target="_blank" rel="noopener">
+        View Roadmap Site <span class="arrow">→</span>
+      </a>
     </div>
+  </div>
+  
+  <!-- Card 02: Café Analysis PDF -->
+  <div class="project-card" data-index="2" onclick="this.classList.toggle('expanded')">
+    <!-- Background image anchored to right side -->
+    <div class="card-bg-image" style="background-image: url('PDF.png');"></div>
+    <!-- Gradient fade left over image -->
+    <div class="card-img-fade"></div>
+    <!-- Glass overlay -->
+    <div class="card-glass"></div>
+    <!-- Inner rim highlight -->
+    <div class="card-inner-border"></div>
+    <!-- Top sheen -->
+    <div class="card-sheen"></div>
+    <!-- Left accent line -->
+    <div class="project-accent"></div>
+    <!-- Content -->
+    <div class="project-inner">
+      <span class="project-tag">02</span>
+      <h2 class="project-title">Café Analysis PDF</h2>
+      <p class="project-desc">A full in-depth café analysis — data, insights, and strategy compiled into a polished document.</p>
+      <a class="btn-lime" href="https://drive.google.com/file/d/13jIh4bdPCGVVVSsR8cze-CUHbcV5EfcT/view?usp=drive_link" target="_blank" rel="noopener">
+        View Full PDF <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- Plus Banner -->
+<div class="plus-banner">
+  <div class="plus-glass"></div>
+  <div class="plus-inner-border"></div>
+  <div class="plus-sheen"></div>
+  <div class="plus-content">
+    <div class="plus-pill">PLUS</div>
+    <p class="plus-text">1 week of message consulting &amp; follow-ups — included with every project.</p>
+  </div>
+</div>
 
     <!-- Divider -->
     <div class="divider">
