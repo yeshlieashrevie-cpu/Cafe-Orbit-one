@@ -895,11 +895,11 @@ body {
 
 .btn-onboard {
   position: relative;
-  display: inline-flex;
+  display: flex;
   box-sizing: border-box;
   align-items: center;
   margin: 0 auto;
-  gap: 14px;
+  justify-content: center;
   width: 100%;
   padding: 20px 28px;
   border-radius: var(--radius-pill);
@@ -945,9 +945,10 @@ body {
 .btn-onboard:active { transform: scale(0.97) !important; }
 
 .onboard-icon {
+  position: absolute;
+  left: 24px;
   font-size: 26px;
   line-height: 1;
-  flex-shrink: 0;
   filter: drop-shadow(0 0 6px rgba(0,0,0,0.25));
 }
 
@@ -955,9 +956,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  flex: 1;
-  text-align: left;
+  text-align: center;
 }
+
 .onboard-label {
   font-size: 17px;
   font-weight: 800;
@@ -975,9 +976,10 @@ body {
 
 .onboard-arrow {
   font-size: 22px;
+  position: absolute;
+  right: 24px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
-  flex-shrink: 0;
   transition: transform 0.25s var(--ease);
 }
 .btn-onboard:hover .onboard-arrow { transform: translateX(5px); }
