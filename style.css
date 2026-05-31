@@ -1547,10 +1547,29 @@ body {
 
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 520px) {
-  .pain-grid { grid-template-columns: 1fr; }
-  .banner-side-img { display: none; }
-  .hero-banner .sub-label { font-size: 0.9rem; }
-  .hero-banner .main-label { font-size: 1.8rem; }
+
+  .banner-side-img {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-banner {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .hero-banner .sub-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .hero-banner .main-label {
+    font-size: 1.55rem;
+    line-height: 0.95;
+    white-space: nowrap;
+  }
 }
 
 /* ================================================
