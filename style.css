@@ -320,9 +320,14 @@ body {
   );
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  transition:
-    background 0.6s cubic-bezier(0.23, 1, 0.32, 1),
-    backdrop-filter 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity;
+  transform: translateZ(0);
+  transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card:hover .card-glass,
+.project-card.expanded .card-glass {
+  opacity: 0.6;
 }
 
 
@@ -570,14 +575,20 @@ body {
 .contact-section {
   text-align: center;
   animation: fadeUp 0.6s 0.56s both;
+  width: 100%;
+  box-sizing: border-box;
 }
 .contact-grid {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
   text-align: left;
 }
 .contact-card {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -774,6 +785,10 @@ body {
   .contact-card { width: 100%; box-sizing: border-box; }
   .btn-onboard { width: 100%; box-sizing: border-box; }
   .onboard-cta { padding: 0; }
+  .contact-card { flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+  .contact-info { min-width: 0; }
+  .btn-violet, .btn-lime { width: 100%; justify-content: center; }
+  .plus-banner { flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
   .contact-card {
@@ -843,9 +858,12 @@ body {
 /* ── Onboarding CTA ── */
 .onboard-cta {
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 40px 0 28px;
   display: flex;
   justify-content: center;
-  margin: 60px 0 28px;
   animation: fadeUp 0.6s 0.45s both;
 }
 
@@ -871,10 +889,10 @@ body {
 .btn-onboard {
   position: relative;
   display: inline-flex;
+  box-sizing: border-box;
   align-items: center;
   gap: 14px;
   width: 100%;
-  max-width: 520px;
   padding: 20px 28px;
   border-radius: var(--radius-pill);
   border: none;
@@ -883,6 +901,7 @@ body {
   font-family: var(--font-body);
   color: var(--black);
   background: linear-gradient(135deg, #d4ff4d 0%, #c6ff33 45%, #aaeb00 100%);
+  max-width: 100%;
   box-shadow:
     0 0 0 1px rgba(198, 255, 51, 0.6),
     0 0 24px rgba(198, 255, 51, 0.7),
@@ -1285,7 +1304,7 @@ body {
   border: none;
   position: relative;
   z-index: 1;
-}}
+}
 
 .banner-side-img.left {
   margin-left: 0;
@@ -1472,7 +1491,6 @@ body {
   border-right:  1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: var(--radius-pill);
-  padding: 80px 40px;
   color: var(--white-80);
   font-family: var(--font-body);
   font-size: 1rem;
