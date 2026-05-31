@@ -788,6 +788,12 @@ body {
     margin: 0 auto;
   }
 
+  .cta-pill {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact-card { width: 100%; box-sizing: border-box; }
   .btn-onboard { width: 100%; box-sizing: border-box; }
   .onboard-cta { padding: 0; }
