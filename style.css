@@ -784,7 +784,7 @@ body {
 
   .contact-grid {
     width: 100%;
-    max-width: 340px;
+    width: calc(100% - 32px);
     margin: 0 auto;
   }
 
