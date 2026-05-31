@@ -1557,10 +1557,10 @@ body {
   }
 
   .hero-banner {
-    width: calc(100% + 16px);
-    margin-left: -8px;
-    margin-right: -8px;
-    gap: 0;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .banner-side-img.left {
@@ -1581,6 +1581,19 @@ body {
     font-size: 1.55rem;
     line-height: 0.95;
     white-space: nowrap;
+  }
+
+  .features-card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .disclaimer {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    padding: 12px 16px;
   }
 }
 
