@@ -789,9 +789,10 @@ body {
   }
 
 .cta-pill {
-    width: calc(100% - 40px);
+    width: 100%;
+    max-width: 340px;
     margin: 0 auto;
-  }
+}
 
   .contact-card { width: 100%; box-sizing: border-box; }
   .btn-onboard { width: 100%; box-sizing: border-box; }
