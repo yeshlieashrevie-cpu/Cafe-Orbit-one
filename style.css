@@ -898,8 +898,9 @@ body {
   display: inline-flex;
   box-sizing: border-box;
   align-items: center;
+  margin: 0 auto;
   gap: 14px;
-  width: 100%;
+  width: calc(100% - 32px);
   padding: 20px 28px;
   border-radius: var(--radius-pill);
   border: none;
