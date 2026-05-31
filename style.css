@@ -769,7 +769,12 @@ body {
 /* Large mobile / small tablet: up to 600px */
 @media (max-width: 600px) {
   body { padding: 32px 14px 60px; }
-  .card { padding: 40px 24px 36px; }
+  .card { padding: 40px 20px 36px; }
+  .contact-grid { width: 100%; }
+  .contact-card { width: 100%; box-sizing: border-box; }
+  .btn-onboard { width: 100%; box-sizing: border-box; }
+  .onboard-cta { padding: 0; }
+}
 
   .contact-card {
     flex-wrap: wrap;
@@ -1517,5 +1522,7 @@ body {
 /* ── Responsive ─────────────────────────────────────────────── */
 @media (max-width: 520px) {
   .pain-grid { grid-template-columns: 1fr; }
-  .banner-side-img { width: 60px; height: 60px; }
+  .banner-side-img { display: none; }
+  .hero-banner .sub-label { font-size: 0.9rem; }
+  .hero-banner .main-label { font-size: 1.8rem; }
 }
