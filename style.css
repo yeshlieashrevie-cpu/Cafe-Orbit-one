@@ -900,7 +900,7 @@ body {
   align-items: center;
   margin: 0 auto;
   gap: 14px;
-  width: calc(100% - 32px);
+  width: 100%;
   padding: 20px 28px;
   border-radius: var(--radius-pill);
   border: none;
@@ -909,7 +909,7 @@ body {
   font-family: var(--font-body);
   color: var(--black);
   background: linear-gradient(135deg, #d4ff4d 0%, #c6ff33 45%, #aaeb00 100%);
-  max-width: 100%;
+  max-width: 300px;
   box-shadow:
     0 0 0 1px rgba(198, 255, 51, 0.6),
     0 0 24px rgba(198, 255, 51, 0.7),
